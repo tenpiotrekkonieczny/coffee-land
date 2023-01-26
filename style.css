@@ -5,6 +5,7 @@
 	--black: #13131a;
 	--bg: #010103;
 	--border: 0.1rem solid rgba(255, 255, 255, 0.3);
+	--my: #7a7d80;
 }
 
 * {
@@ -40,17 +41,33 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-	background: var(--bg);
+	background: var(--my);
+}
+
+
+.heading {
+text-align: center;
+color: #fff;
+text-transform: uppercase;
+padding-bottom: 2.5rem;
+font-size: 4rem;
+}
+
+.heading span{
+
+	color: #fff;
+    text-transform: uppercase;
 }
 
 .btn {
-	margin-top: 1rem;
+	margin-top:1rem;
 	display: inline-block;
-	padding: 9rem 3rem;
+	padding: 3rem 3rem;
 	font-size: 1.7rem;
 	color: #fff;
 	background: var(--main-color);
 	cursor: pointer;
+	
 }
 
 .btn:hover {
@@ -58,7 +75,7 @@ body {
 }
 
 .header {
-	background: var(--bg);
+	background: var(--my);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -88,7 +105,7 @@ body {
 	padding-bottom: 0.5rem;
 }
 
-.header .icons div {
+.header .icons div{
 	color: #fff;
 	cursor: pointer;
 	font-size: 2.5rem;
@@ -125,25 +142,25 @@ body {
 	text-transform: none;
 }
 
-.header .search-form input {
+.header .search-form label {
 	cursor: pointer;
 	font-size: 2.2rem;
 	margin-right: 1.5rem;
 	color: var(--black);
 }
 
-.header .search-form input:hover {
+.header .search-form label:hover {
 	color: var(--main-color);
 }
 
 .header .cart-items-container {
 	position: absolute;
 	top: 100%;
-	right: -100%;
-	height: calc(100vh - 9.5rem);
-	width: 30rem;
+	right:-100%;
+	height: calc(100vh -9rem);
+	width: 35rem;
 	background: #fff;
-	padding: 0 1.5rem;
+	padding:  1.5rem;
 }
 
 .header .cart-items-container .cart-item {
@@ -177,13 +194,14 @@ body {
 	padding-bottom: 5rem;
 }
 
-.header .cart-items-container .cart-item .content price {
+.header .cart-items-container .cart-item .content .price {
 	font-size: 1.5rem;
 	color: var(--main-color);
 }
 
 .header .cart-items-container .btn {
-	width: 100%;
+	position: relative;
+	width: 83%;
 	text-align: center;
 }
 
@@ -232,8 +250,18 @@ body {
 	.header .navbar {
 		position: absolute;
 		top: 100%;
-		right: 0;
+		right: -100%;
 		background: #fff;
-		background: 30rem;
+		width: 30rem;
+		height: calc(100vh - 9.5rem);
+	}
+
+	.header .navbar a{
+		color:var(--black);
+		display: block;
+		margin: 1.5rem;
+		padding: 5rem;
+		font-size: 2rem;
+
 	}
 }
