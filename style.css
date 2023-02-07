@@ -28,7 +28,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-	width: 8rem;
+	width: 1rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -41,33 +41,34 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-	background: var(--my);
+	background: var(--black);
 }
 
+section {
+	padding: 2rem 7%;
+}
 
 .heading {
-text-align: center;
-color: #fff;
-text-transform: uppercase;
-padding-bottom: 2.5rem;
-font-size: 4rem;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 3.5rem;
+	font-size: 4rem;
 }
 
-.heading span{
-
-	color: #fff;
-    text-transform: uppercase;
+.heading span {
+	color: var(--main-color);
+	text-transform: uppercase;
 }
 
 .btn {
-	margin-top:1rem;
+	margin-top: 1rem;
 	display: inline-block;
 	padding: 3rem 3rem;
 	font-size: 1.7rem;
 	color: #fff;
 	background: var(--main-color);
 	cursor: pointer;
-	
 }
 
 .btn:hover {
@@ -75,7 +76,7 @@ font-size: 4rem;
 }
 
 .header {
-	background: var(--my);
+	background: var(--black);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -105,7 +106,7 @@ font-size: 4rem;
 	padding-bottom: 0.5rem;
 }
 
-.header .icons div{
+.header .icons div {
 	color: #fff;
 	cursor: pointer;
 	font-size: 2.5rem;
@@ -133,8 +134,8 @@ font-size: 4rem;
 	transform-origin: top;
 }
 
-.header .search-form.active{
-	transform: scaleY(1)
+.header .search-form.active {
+	transform: scaleY(1);
 }
 
 .header .search-form input {
@@ -160,14 +161,14 @@ font-size: 4rem;
 .header .cart-items-container {
 	position: absolute;
 	top: 100%;
-	right:-100%;
+	right: -100%;
 	height: calc(100vh -9rem);
 	width: 35rem;
 	background: #fff;
-	padding:  1.5rem;
+	padding: 1.5rem;
 }
 
-.header .cart-items-container.active{
+.header .cart-items-container.active {
 	right: 0;
 }
 
@@ -213,31 +214,52 @@ font-size: 4rem;
 	text-align: center;
 }
 
+.home {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url(./img/homeimg2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 
+.home .content {
+	max-width: 60rem;
+}
 
+.home .content h3 {
+	font-size: 6rem;
+	text-transform: uppercase;
+	color: #fff;
+}
 
+.home .content p {
+	font-size: 1.5rem;
+	font-weight: lighter;
+	line-height: 1.8;
+	padding: 1rem 0;
+	color: #eee;
+}
 
+.about .row {
+	display: flex;
+	align-items: center;
+	background: var(--black);
+	flex-wrap: wrap;
+}
 
+.about .row .image {
+	flex: 1 1 45rem;
+}
 
+.about .row .image img {
+	width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.about .row .content {
+	flex: 1 1 45rem;
+	padding: 2rem;
+}
 
 /*media queries*/
 @media (max-width: 991px) {
@@ -247,6 +269,10 @@ font-size: 4rem;
 
 	.header {
 		padding: 1.5rem 2rem;
+	}
+
+	section {
+		padding: 2rem;
 	}
 }
 
@@ -264,22 +290,35 @@ font-size: 4rem;
 		height: calc(100vh - 9.5rem);
 	}
 
-	.header .navbar.active{
+	.header .navbar.active {
 		right: 0;
 	}
 
-	.header .navbar a{
-		color:var(--black);
+	.header .navbar a {
+		color: var(--black);
 		display: block;
 		margin: 1.5rem;
 		padding: 5rem;
 		font-size: 2rem;
-
 	}
 
-	.header .search-form{
+	.header .search-form {
 		width: 90%;
 		right: 2rem;
+	}
+
+	.home {
+		background-position: left;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.home .content h3 {
+		font-size: 4.5rem;
+	}
+
+	.home .content p {
+		font-size: 1.5rem;
 	}
 }
 
@@ -287,6 +326,4 @@ font-size: 4rem;
 	html {
 		font-size: 50%;
 	}
-
-	
 }
