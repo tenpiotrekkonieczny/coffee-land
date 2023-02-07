@@ -133,6 +133,10 @@ font-size: 4rem;
 	transform-origin: top;
 }
 
+.header .search-form.active{
+	transform: scaleY(1)
+}
+
 .header .search-form input {
 	height: 100%;
 	width: 100%;
@@ -161,6 +165,10 @@ font-size: 4rem;
 	width: 35rem;
 	background: #fff;
 	padding:  1.5rem;
+}
+
+.header .cart-items-container.active{
+	right: 0;
 }
 
 .header .cart-items-container .cart-item {
@@ -242,7 +250,7 @@ font-size: 4rem;
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	#menu-btn {
 		display: inline-block;
 	}
@@ -256,6 +264,10 @@ font-size: 4rem;
 		height: calc(100vh - 9.5rem);
 	}
 
+	.header .navbar.active{
+		right: 0;
+	}
+
 	.header .navbar a{
 		color:var(--black);
 		display: block;
@@ -264,4 +276,17 @@ font-size: 4rem;
 		font-size: 2rem;
 
 	}
+
+	.header .search-form{
+		width: 90%;
+		right: 2rem;
+	}
+}
+
+@media (max-width: 450px) {
+	html {
+		font-size: 50%;
+	}
+
+	
 }
