@@ -419,7 +419,7 @@ section {
 
 .contact .row {
 	display: flex;
-	
+
 	background: var(--black);
 	flex-wrap: wrap;
 	gap: 1rem;
@@ -443,7 +443,7 @@ section {
 	color: #fff;
 }
 
-.contact .row form .inputBox{
+.contact .row form .inputBox {
 	display: flex;
 	align-items: center;
 	margin-top: 2rem;
@@ -452,27 +452,74 @@ section {
 	border: var(--border);
 }
 
-.contact .row form .inputBox span{
+.contact .row form .inputBox span {
 	color: #fff;
 	font-size: 2rem;
 	padding-left: 2rem;
 }
 
-.contact .row form .inputBox input{
+.contact .row form .inputBox input {
 	width: 100%;
 	padding: 2rem;
 	font-size: 1.7rem;
 	color: #fff;
 	text-transform: none;
 	background: none;
-
 }
 
+.blogs .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 1.5rem;
+}
 
+.blogs .box-container .box {
+	border: var(--border);
+}
 
+.blogs .box-container .box .image {
+	height: 25rem;
+	overflow: hidden;
+	width: 100%;
+}
 
+.blogs .box-container .box .image img {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
 
+.blogs .box-container .box:hover .image img {
+	transform: scale(1.2);
+}
 
+.blogs .box-container .box .content {
+	padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+	font-size: 2.5rem;
+	line-height: 1.5;
+	color: #fff;
+}
+
+.blogs .box-container .box .content .title:hover {
+	color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+	color: var(--main-color);
+	display: block;
+	padding-top: 1rem;
+	font-size: 1.5rem;
+}
+
+.blogs .box-container .box .content p {
+	font-size: 1.2em;
+	line-height: 1.4;
+	color: #ccc;
+	padding: 1rem;
+}
 
 /*media queries*/
 @media (max-width: 991px) {
