@@ -64,7 +64,7 @@ section {
 .btn {
 	margin-top: 1rem;
 	display: inline-block;
-	padding: 3rem 3rem;
+	padding: 2rem 6rem;
 	font-size: 1.7rem;
 	color: #fff;
 	background: var(--main-color);
@@ -302,7 +302,6 @@ section {
 }
 
 .menu .box-container .box .price span {
-	
 	font-size: 1.5rem;
 	text-decoration: line-through;
 	font-weight: lighter;
@@ -359,67 +358,115 @@ section {
 	padding: 1.5rem;
 }
 
-.products .box-container .box .content .stars i{
+.products .box-container .box .content .stars i {
 	font-size: 1.7rem;
 	color: var(--main-color);
 }
 
-.products .box-container .box .content .price{
+.products .box-container .box .content .price {
 	color: #fff;
 	font-size: 2.5rem;
 }
 
-.products .box-container .box .content .price span{
+.products .box-container .box .content .price span {
 	color: #fff;
 	font-size: 1.5rem;
 	text-decoration: line-through;
 	font-weight: lighter;
 }
 
-.review .box-container{
+.review .box-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 	gap: 1.5rem;
 }
 
-.review .box-container .box{
+.review .box-container .box {
 	border: var(--border);
 	text-align: center;
-	padding:3rem 2rem;
+	padding: 3rem 2rem;
 }
 
-.review .box-container .box p{
+.review .box-container .box p {
 	font-size: 1.5rem;
 	line-height: 1.8;
 	color: #ccc;
 	padding: 2rem 0;
 }
 
-.review .box-container .box .user{
+.review .box-container .box .user {
 	height: 10rem;
 	width: 10rem;
 	border-radius: 50%;
 	object-fit: cover;
-
 }
 
-.review .box-container .box h3{
+.review .box-container .box h3 {
 	padding: 1rem 0;
 	font-size: 2rem;
 	color: #fff;
 }
 
-.review .box-container .box .stars i{
-	
+.review .box-container .box .stars i {
 	font-size: 1.5rem;
 	color: var(--main-color);
 }
 
-.review .box-container .box .quote{
+.review .box-container .box .quote {
 	height: 10rem;
 	color: var(--main-color);
 }
 
+.contact .row {
+	display: flex;
+	
+	background: var(--black);
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.contact .row .map {
+	flex: 1 1 45rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.contact .row form {
+	flex: 1 1 45rem;
+	padding: 5rem 2rem;
+	text-align: center;
+}
+
+.contact .row form h3 {
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	color: #fff;
+}
+
+.contact .row form .inputBox{
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	background: var(--bg);
+	border: var(--border);
+}
+
+.contact .row form .inputBox span{
+	color: #fff;
+	font-size: 2rem;
+	padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+	width: 100%;
+	padding: 2rem;
+	font-size: 1.7rem;
+	color: #fff;
+	text-transform: none;
+	background: none;
+
+}
 
 
 
