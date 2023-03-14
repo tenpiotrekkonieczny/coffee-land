@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -376,21 +376,49 @@
 
             <form action="">
                 <h3>get in touch</h3>
+
+
                 <div class="inputBox">
+
                     <span class="fas fa-user"></span>
-                    <input type="text" placeholder="name">
+                    <input type="text" id="name" placeholder="name" />
+
+                    <p class="error-text">error</p>
                 </div>
+
+
+
 
                 <div class="inputBox">
                     <span class="fas fa-envelope"></span>
-                    <input type="mail" placeholder="mail">
+
+                    <input type="email" id="mail" placeholder="mail" />
+                    <p class="error-text">error</p>
                 </div>
+
+
+
 
                 <div class="inputBox">
                     <span class="fas fa-phone"></span>
-                    <input type="number" placeholder="number">
+
+                    <input type="number" id="number" placeholder="number" />
+                    <p class="error-text">error</p>
                 </div>
-                <input type="submit" value="contact now" class="btn">
+
+
+
+
+                <div class="controls-buttons">
+                    <button class="clear">Clear</button>
+
+                    <button class="send">Send</button>
+                </div>
+
+                <div class="popup">
+                    <p>The form has been successfully sent!</p>
+                    <button class="close">Close</button>
+                </div>
 
             </form>
 
@@ -478,7 +506,7 @@
             <a href="#">blogs</a>
         </div>
 
-        
+
         <p class="footer__bottom-text">
             &copy; <span class="footer__year"> </span> star company
         </p>

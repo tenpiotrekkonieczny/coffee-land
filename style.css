@@ -71,6 +71,34 @@ section {
 	cursor: pointer;
 }
 
+.controls-buttons {
+	display: block;
+	justify-content: flex-end;
+}
+
+.controls-buttons:hover {
+	color: white;
+}
+
+.send,
+.clear {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: 2rem 6rem;
+	font-size: 1.7rem;
+	color: #fff;
+	background: var(--main-color);
+	cursor: pointer;
+}
+
+.send:hover,
+.clear:hover,
+.close:hover {
+	border: solid 1px #fff;
+	letter-spacing: 0.2rem;
+	background-color: var(--my);
+}
+
 .btn:hover {
 	letter-spacing: 0.2rem;
 }
@@ -443,6 +471,13 @@ section {
 	color: #fff;
 }
 
+.contact .inputBox label {
+	display: inline-block;
+	color: #fff;
+	font-size: 2rem;
+	padding-left: 2rem;
+}
+
 .contact .row form .inputBox {
 	display: flex;
 	align-items: center;
@@ -465,6 +500,20 @@ section {
 	color: #fff;
 	text-transform: none;
 	background: none;
+}
+
+.contact .row .inputBox .error-text {
+	white-space: nowrap;
+	margin: 2rem;
+	padding-right: 1rem;
+	font-size: 20px;
+	color: var(--main-color);
+	visibility: hidden;
+	text-transform: none;
+}
+
+.contact .row .inputBox.error .error-text {
+	visibility: visible;
 }
 
 .blogs .box-container {
@@ -521,8 +570,92 @@ section {
 	padding: 1rem;
 }
 
+.footer {
+	background: var(--black);
+	text-align: center;
+}
+
+.footer .share {
+	padding: 1rem 0;
+}
+
+.footer .share a {
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	font-size: 2rem;
+	color: #fff;
+	border: var(--border);
+	margin: 3rem;
+	border-radius: 50%;
+}
+
+.footer .share a:hover {
+	cursor: pointer;
+	background-color: var(--main-color);
+}
+
+.footer .links {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 2rem 0;
+	gap: 1rem;
+}
+
+.footer .links a {
+	padding: 0.7rem 2rem;
+	color: #fff;
+	border: var(--border);
+	font-size: 2rem;
+}
+
+.footer .links a:hover {
+	cursor: pointer;
+	background: var(--main-color);
+}
+
+.footer p {
+	font-size: 2rem;
+	color: var(--main-color);
+	font-weight: lighter;
+	padding: 1.5rem;
+}
+
+.popup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: -300%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 30%;
+	background-color: #fff;
+	border-radius: 8px;
+	border: 1px solid black;
+}
+
+.popup p {
+	font-size: 35px;
+}
+
+.popup .close {
+	margin-top: 30px;
+	border: 1px solid black;
+	padding: 10px;
+	background-color: var(--main-color);
+	color: #fff;
+}
+
+.show-popup {
+	top: 780%;
+}
+
 /*media queries*/
-@media (max-width: 991px) {
+@media (max-width: 1920px) {
 	html {
 		font-size: 55%;
 	}
@@ -580,6 +713,11 @@ section {
 	.home .content p {
 		font-size: 1.5rem;
 	}
+
+	.show-popup {
+		/* top: 50%; */
+		top: 780%;
+	}
 }
 
 @media (max-width: 450px) {
@@ -587,63 +725,3 @@ section {
 		font-size: 50%;
 	}
 }
-
-
-.footer{
-	background: var(--black);
-	text-align: center;
-}
-
-.footer .share{
-	padding: 1rem 0;
-}
-
-.footer .share a{
-	height: 5rem;
-	width: 5rem;
-	line-height: 5rem;
-	font-size: 2rem;
-	color: #fff;
-	border: var(--border);
-	margin: 3rem;
-	border-radius: 50%;
-}
-
-.footer .share a:hover{
-	cursor: pointer;
-	background-color: var(--main-color);
-
-}
-
-.footer .links{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	padding: 2rem 0;
-	gap: 1rem;
-}
-
-.footer .links a{
-	padding: .7rem 2rem;
-	color: #fff;
-	border: var(--border);
-	font-size: 2rem;
-
-}
-
-.footer .links a:hover{
-	cursor: pointer;
-	background: var(--main-color);
-}
-
-.footer p{
-	font-size: 2rem;
-	color: var(--main-color);
-	font-weight: lighter;
-	padding: 1.5rem;
-}
-
-
-
-
-
