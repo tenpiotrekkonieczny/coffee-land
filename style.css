@@ -25,6 +25,8 @@ html {
 	overflow-x: hidden;
 	scroll-padding-top: 9rem;
 	scroll-behavior: smooth;
+	
+	
 }
 
 html::-webkit-scrollbar {
@@ -42,10 +44,12 @@ html::-webkit-scrollbar-thumb {
 
 body {
 	background: var(--black);
+	
 }
 
 section {
 	padding: 2rem 7%;
+	
 }
 
 .heading {
@@ -315,6 +319,7 @@ section {
 
 .menu .box-container .box img {
 	height: 10rem;
+	padding: 5rem;
 }
 
 .menu .box-container .box h3 {
@@ -374,7 +379,8 @@ section {
 }
 
 .products .box-container .box .image img {
-	height: 25rem;
+	height: 20rem;
+	width: 25rem;
 }
 
 .products .box-container .box .content h3 {
@@ -445,12 +451,15 @@ section {
 	color: var(--main-color);
 }
 
+
+
 .contact .row {
 	display: flex;
-
+	height: 60%;
 	background: var(--black);
 	flex-wrap: wrap;
 	gap: 1rem;
+	
 }
 
 .contact .row .map {
@@ -631,15 +640,18 @@ section {
 	top: -300%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 50%;
-	height: 30%;
+	width: 30%;
+	height: 20%;
 	background-color: #fff;
 	border-radius: 8px;
 	border: 1px solid black;
+	
+	
 }
 
 .popup p {
 	font-size: 35px;
+
 }
 
 .popup .close {
@@ -651,11 +663,19 @@ section {
 }
 
 .show-popup {
-	top: 780%;
+	
+    transition-duration: 0.2s;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+
+
+
 /*media queries*/
-@media (max-width: 1920px) {
+@media (max-width: 1024px) {
 	html {
 		font-size: 55%;
 	}
@@ -667,12 +687,22 @@ section {
 	section {
 		padding: 2rem;
 	}
+
+	.popup{
+		width: 50%;
+		
+		
+	}
 }
 
 @media (max-width: 768px) {
 	#menu-btn {
 		display: inline-block;
 	}
+
+	.popup{
+    width: 50%;
+  }
 
 	.header .navbar {
 		position: absolute;
@@ -714,14 +744,26 @@ section {
 		font-size: 1.5rem;
 	}
 
-	.show-popup {
-		/* top: 50%; */
-		top: 780%;
-	}
+	
+
+
 }
 
 @media (max-width: 450px) {
 	html {
 		font-size: 50%;
 	}
+
+	.popup {
+		text-align: center;
+		padding: 20px;
+		height: 100px;
+	}
+
+	.popup p {
+		font-size: 20px;
+		
+	}
+
+	
 }

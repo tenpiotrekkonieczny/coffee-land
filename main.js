@@ -1,4 +1,15 @@
-const navbar = document.querySelector(".navbar");
+const name = document.querySelector("#name");
+const mail = document.querySelector("#mail");
+const number = document.querySelector("#number");
+const sendBtn = document.querySelector(".send");
+const clearBtn = document.querySelector(".clear");
+const popup = document.querySelector('.popup');
+const close = document.querySelector('.close');
+const navbar = document.querySelector('.navbar');
+
+// function changeStyle() {
+// 	document.getElementsByClassName(".heading").style.opacity = "0.5";
+//   }
 
 document.querySelector("#menu-btn").onclick = () => {
 	navbar.classList.toggle("active");
@@ -37,12 +48,8 @@ const handleCurrentYear = () => {
 
 handleCurrentYear();
 
-const name = document.querySelector("#name");
-const mail = document.querySelector("#mail");
-const number = document.querySelector("#number");
-const sendBtn = document.querySelector(".send");
-const clearBtn = document.querySelector(".clear");
-const popup = document.querySelector('.popup');
+
+
 
 const showError = (input, msg) => {
 	const inputBox = input.parentElement;
@@ -113,15 +120,17 @@ const checkErrors = () => {
 	}
 };
 
+
+
 sendBtn.addEventListener("click", e => {
 	e.preventDefault();
 
 	checkForm([name, mail, number]);
 	checkLength(name, 3);
 	checkNumber(number, 9);
-
 	checkMail(mail);
 	checkErrors();
+	// changeStyle()
 	
 });
 
