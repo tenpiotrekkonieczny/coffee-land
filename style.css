@@ -25,8 +25,6 @@ html {
 	overflow-x: hidden;
 	scroll-padding-top: 9rem;
 	scroll-behavior: smooth;
-	
-	
 }
 
 html::-webkit-scrollbar {
@@ -44,12 +42,10 @@ html::-webkit-scrollbar-thumb {
 
 body {
 	background: var(--black);
-	
 }
 
 section {
 	padding: 2rem 7%;
-	
 }
 
 .heading {
@@ -93,6 +89,7 @@ section {
 	color: #fff;
 	background: var(--main-color);
 	cursor: pointer;
+	justify-content: space-between;
 }
 
 .send:hover,
@@ -451,15 +448,12 @@ section {
 	color: var(--main-color);
 }
 
-
-
 .contact .row {
 	display: flex;
 	height: 60%;
 	background: var(--black);
 	flex-wrap: wrap;
 	gap: 1rem;
-	
 }
 
 .contact .row .map {
@@ -645,13 +639,10 @@ section {
 	background-color: #fff;
 	border-radius: 8px;
 	border: 1px solid black;
-	
-	
 }
 
 .popup p {
 	font-size: 35px;
-
 }
 
 .popup .close {
@@ -663,19 +654,15 @@ section {
 }
 
 .show-popup {
-	
-    transition-duration: 0.2s;
+	transition-duration: 0.6s;
 	position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-
-
-
 /*media queries*/
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
 	html {
 		font-size: 55%;
 	}
@@ -688,10 +675,8 @@ section {
 		padding: 2rem;
 	}
 
-	.popup{
+	.popup {
 		width: 50%;
-		
-		
 	}
 }
 
@@ -700,9 +685,9 @@ section {
 		display: inline-block;
 	}
 
-	.popup{
-    width: 50%;
-  }
+	.popup {
+		width: 50%;
+	}
 
 	.header .navbar {
 		position: absolute;
@@ -743,10 +728,6 @@ section {
 	.home .content p {
 		font-size: 1.5rem;
 	}
-
-	
-
-
 }
 
 @media (max-width: 450px) {
@@ -762,8 +743,5 @@ section {
 
 	.popup p {
 		font-size: 20px;
-		
 	}
-
-	
 }
